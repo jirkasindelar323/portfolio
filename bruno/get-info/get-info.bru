@@ -5,11 +5,15 @@ meta {
 }
 
 get {
-  url: http://localhost:8080/api/info?Origin=http://localhost:5173
+  url: http://localhost:8080/api/info
   body: none
   auth: none
 }
 
 params:query {
+  ~: 
+}
+
+headers {
   Origin: http://localhost:5173
 }
