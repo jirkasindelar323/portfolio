@@ -5,7 +5,11 @@ meta {
 }
 
 get {
-  url: {{baseUrl}}/api/info
+  url: http://localhost:8080/api/info?Origin=http://localhost:5173
   body: none
   auth: none
+}
+
+params:query {
+  Origin: http://localhost:5173
 }
