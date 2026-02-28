@@ -10,7 +10,10 @@ services:
     restart: unless-stopped
 
   frontend:
-    build: ../portfolio-frontend
+    build:
+      context: ../portfolio-frontend
+      args:
+        - VITE_API_URL=http://localhost:8080/api
     ports:
       - "80:80"
     restart: unless-stopped
