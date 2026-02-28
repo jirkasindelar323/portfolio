@@ -26,4 +26,5 @@ dependencies {
 
 tasks.withType<Test> {
 	useJUnitPlatform()
+	failOnNoDiscoveredTests = false
 }

@@ -1,3 +1,13 @@
 spring:
   application:
     name: jirkasindelar323
+
+server:
+  port: ${PORT:8080}
+
+cors:
+  allowed-origins: http://localhost:5173,http://localhost
+
+logging:
+  level:
+    com.github.jirkasindelar323: INFO
