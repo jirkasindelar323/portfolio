@@ -13,6 +13,7 @@ public class PortfolioService {
     public PersonalInfo getPersonalInfo() {
         return new PersonalInfo(
                 "Jirka Sindelar",
+                "Yeer-ka",
                 "Software Developer",
                 "Passionate developer with experience in Java, Spring Boot, and React",
                 "jirkasindelar@example.com",

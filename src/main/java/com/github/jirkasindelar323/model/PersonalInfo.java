@@ -2,6 +2,7 @@ package com.github.jirkasindelar323.model;
 
 public class PersonalInfo {
     private String name;
+    private String pronunciation;
     private String title;
     private String bio;
     private String email;
@@ -12,8 +13,9 @@ public class PersonalInfo {
     public PersonalInfo() {
     }
 
-    public PersonalInfo(String name, String title, String bio, String email, String github, String linkedin, String location) {
+    public PersonalInfo(String name, String pronunciation, String title, String bio, String email, String github, String linkedin, String location) {
         this.name = name;
+        this.pronunciation = pronunciation;
         this.title = title;
         this.bio = bio;
         this.email = email;
@@ -28,6 +30,14 @@ public class PersonalInfo {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getPronunciation() {
+        return pronunciation;
+    }
+
+    public void setPronunciation(String pronunciation) {
+        this.pronunciation = pronunciation;
     }
 
     public String getTitle() {
