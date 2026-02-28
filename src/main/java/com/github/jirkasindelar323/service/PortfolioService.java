@@ -17,8 +17,8 @@ public class PortfolioService {
                 "Passionate developer with experience in Java, Spring Boot, and React",
                 "jirkasindelar@example.com",
                 "https://github.com/jirkasindelar323",
-                "https://linkedin.com/in/jirkasindelar323",
-                "Australia"
+                "https://www.linkedin.com/in/jiri-sindelar-540a5b143",
+                "601/199 William St, Melbourne VIC, Australia"
         );
     }
 
