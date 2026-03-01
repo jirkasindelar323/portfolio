@@ -234,3 +234,36 @@ src/
 - This project uses **Spring Boot 4.0.3** - be aware of any breaking changes from older versions
 - The codebase is small - keep changes focused and minimal
 - Use **constructor injection** exclusively for dependency injection
+- **Check this file before starting work** and update it when things change
+
+---
+
+## Full-Stack Context
+
+This backend is part of a complete portfolio website project:
+
+| Component | Repository | Purpose |
+|-----------|------------|---------|
+| Frontend | github.com/jirkasindelar323/portfolio-frontend | React/TypeScript UI |
+| Backend | portfolio (this repo) | API serving portfolio data |
+| Deployment | Railway | Hosting both FE + BE |
+| Secrets | GitHub Secrets + Railway Variables | API keys, tokens, config |
+
+### Current Intentions & Plans
+*(Update when working on new features)*
+
+- **Frontend**: Display personal info, projects, and skills from backend API
+- **Backend**: Serves data at `/api/info`, `/api/projects`, `/api/skills`
+- **Deployment**: Both deployed on Railway with environment variables
+
+### Synchronization Protocol
+- When deploying: Note URL changes in this file
+- When adding secrets: Document which service holds what (GitHub vs Railway)
+- When creating new features: Note the intention and affected components
+
+### API Contract (keep in sync with frontend)
+```
+GET /api/info → { name, pronunciation, title, bio, email, github, linkedin, location }
+GET /api/projects → [{ name, description, techStack, githubUrl, liveUrl }]
+GET /api/skills → [{ name, category, proficiency }]
+```
